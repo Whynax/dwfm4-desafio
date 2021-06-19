@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    box-sizing: border-box; 
+}
+html, body{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin: 0;
+}
+
+.background-h-w{
+    background-image: url(./imgs/burgerjoint3.jpg);
+    height: 616px;
+}
+
+.header{
+    padding: 20px 15px 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media(min-width: 960px){
+    .header{
+        background-color: transparent;
+        padding: 50px 80px;
+    }
+}
+.header__logo{
+    width: 70px;
+}
+@media(min-width: 960px){
+    .header__logo{
+        width: 150px;
+    }
+}
+.abre-ventana{
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+}
+@media(min-width:960px){
+    .abre-ventana{
+        display: none;
+    }
+}
+.ventana{
+    display: none;
+    justify-content: center;
+    position: absolute;
+    background-color: #161616;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.ventana__button-container{
+    position: absolute;
+    right: 0;
+    padding: 30px 15px;
+}
+.ventana__cierra-ventana{
+    text-align: end;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+}
+.ventana__contenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 48px;
+    text-decoration: none;
+}
+.nav-ul{
+    display: none;
+}
+@media(min-width:960px){
+    .nav-ul{
+        display: flex;
+        font-family: "Poppins";
+        font-size: 24px;
+    }
+}
+.nav{
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+@media(min-width:960px){
+    .nav{
+        padding-left: 100px;
+    }
+}
+.welcome{
+    display: grid;
+    font-family: "Montserrat";
+    color: white;
+    justify-content: center;
+}
+.welcome__title{
+    padding-top: 115px;
+    margin: 0 auto;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+@media(min-width: 960px){
+    .welcome__title{
+        padding-top: 0;
+    }
+}
+.welcome__description{
+    margin: 0;
+    font-size: 32px;
+    padding-top: 20px;
+}
+/*SOY AGUSTIN*/
+.about-me{
+    display: grid;
+    width: 100%;
+    height: 538px;
+    background-color: #000;
+}
+@media(min-width: 960px){
+    .about-me{
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        background-color: #fff;
+    }
+}
+.about-me__title{
+    height: 100px;
+    margin: 0;
+    color: #FAFAFA;
+    font-family: "Montserrat";
+    font-size: 32px;
+    padding: 55px 52px 0px 52px;
+    justify-self: center;
+}
+@media(min-width: 960px){
+    .about-me__title{
+        padding-top: 124px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        color: #000;
+        padding-right: 500px;
+    }
+}
+.about-me__img{
+    display: none;
+}
+@media(min-width: 960px){
+    .about-me__img{
+        padding-top: 58px;
+        display: initial;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        color: #000
+    }
+}
+
+.about-me__lorem{
+    margin: 0;
+    font-family: "Poppins";
+    font-weight:300;
+    font-size: 16px;
+    color: #FAFAFA;
+    padding: 0 32px 0 32px;
+}
+@media(min-width: 960px){
+    .about-me__lorem{
+        width: 815px;
+        height: 215px;
+        font-size: 24px;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        justify-self: center;
+        align-self: end;
+        color: #000;
+        margin-bottom: 123px;
+        margin-left: 100px;
+    }
+}
+.services__title{
+    justify-content: center;
+    font-family: "Montserrat";
+    font-size: 32px;
+    margin: 70px 52px ;
+    text-align: center;
+}
+.service-card{
+    display: grid;
+    font-family: "Poppins";
+    padding-bottom: 100px;
+}
+@media(min-width:960px){
+    .service-card{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.services__content{
+    display: grid;
+    font-family: "Poppins";
+    padding-bottom: 100px;
+}
+@media(min-width:960px){
+    .services__content{
+        padding-bottom: 0;
+    }
+}
+.content__img{
+    padding: 0 119px 0 119px;
+}
+@media(min-width:960px){
+    .content__img{
+        justify-self: center;
+    }
+}
+.content__title{
+    text-align: center;
+}
+.content__description{
+    margin: 0;
+    text-align: center;
+    padding: 0 57px 0 57px;
+}
+@media(min-width:960px){
+    .content__description{
+        padding: 0 150px 0 150px; 
+    }
+}
+.form{
+    background-color: #000;
+    display: grid;
+}
+@media(min-width: 960px){
+    .form{
+        height: 700px;
+        grid-template-columns: 780px 1fr;
+    }
+    
+}
+.form-content{
+    display: grid;
+}
+@media(min-width: 966px){
+    .form-content{
+        grid-column: 2;
+        justify-self: start;
+        align-self: start;
+        margin-top: 100px;
+    }
+}
+.form__label{
+    color:#FAFAFA;
+    font-family: "Poppins";
+    font-size: 13px;
+    margin-left: 20px;
+}
+@media(min-width: 960px){
+    .form__label{
+        grid-template-columns: 780px 1fr;
+    }
+    
+}
+.form__input{
+    margin: 5px 20px 30px 20px;
+    height: 45px;
+}
+@media(min-width: 960px){
+    .form__input{
+        width: 376px;
+        grid-template-columns: 780px 1fr;
+    }
+    
+}
+.form__textarea{
+    margin: 5px 20px 60px 20px;
+    height: 113px;
+}
+@media(min-width: 960px){
+    .form__textarea{
+        grid-template-columns: 780px 1fr;
+    }
+    
+}
+.button-form{
+    color:#DBDBDB;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #2C2C2C;
+    height: 45px;
+    width: 335px;
+    margin: 0 20px 70px 20px
+}
+@media(min-width: 960px){
+    .button-form{
+        width: 376px;
+        grid-template-columns: 780px 1fr;
+    }
+    
+}
+.form__title{
+    background-color: #000;
+    color: #FAFAFA;
+    font-family: "Montserrat";
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    padding: 70px 52px 35px 52px;
+}
+@media(min-width: 960px){
+    .form__title{
+        justify-self: end;
+        grid-template-columns: 780px 1fr;
+        font-size: 48px;
+        padding-top: 100px;
+    }
+    
+}
+.footer{
+    display: grid;
+    width: 100%;
+    height: 498px;
+    background-color: #2C2C2C;
+    font-family: "Poppins";
+    font-size: 16px;
+    flex-direction: column;
+}
+@media(min-width: 960px){
+    .footer{
+        height: 346px;
+        grid-template-columns: 80px 640px 1fr
+    }
+}
+.logo-footer{
+    width: 100px;
+    height: 80px;
+    justify-self: center;
+    align-self: end;
+    margin-bottom: 36px;
+}
+@media(min-width: 960px){
+.logo-footer{
+        grid-column-start: 2;
+        justify-self: start;
+        align-self: center;
+    }
+}
+@media(min-width: 960px){
+    .redes{
+        padding-right: 80px;
+        grid-column: 3;
+        justify-self: end;
+        align-self: center;
+        justify-content: right;
+        }
+    }
+.nombre-redes{
+    margin: 0;
+    padding-right: 7px;
+    color:  #DBDBDB;
+}
+.instagram,
+.linkedin,
+.github{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+@media(min-width: 960px){
+    .instagram,
+    .linkedin,
+    .github{
+            justify-content: flex-end;
+        }
+    }
+
+

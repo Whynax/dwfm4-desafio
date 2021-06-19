@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div class="background-h-w">
+        <header class="header">
+            <a href="./index.html">
+                <img class="header__logo" src="./imgs/ANVORGUESA.png">
+            </a>
+            <button class="abre-ventana">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="ventana">
+                <div class="ventana__button-container">
+                    <button class="ventana__cierra-ventana">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="ventana__contenido">
+                    <a href="portfolio.html" class="nav">Portfolio</a>
+                    <a href="servicios.html" class="nav">Servicios</a>
+                    <a href="contacto.html" class="nav">Contacto</a>
+                </div>
+            </div>
+            <div class="nav-ul">
+                <a href="portfolio.html" class="nav">Portfolio</a>
+                <a href="servicios.html" class="nav">Servicios</a>
+                <a href="contacto.html" class="nav">Contacto</a>
+            </div>
+        </header>
+        <div class="welcome">
+            <h1 class="welcome__title">Hola</h1>
+            <h2 class="welcome__description">Soy Agustin</h2>
+        </div>
+    </div>
+    <div class="about-me">
+        <h3 class="about-me__title">Soy Agustin</h3>
+        <img src="./imgs/foto-hombre.svg" alt="" class="about-me__img">
+        <p class="about-me__lorem">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.
+            Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. Integer ut iaculis
+            augue, sit amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec
+            ultricies dolor.</p>
+    </div>
+    <div class="services">
+        <h4 class="services__title">Mis servicios</h4>
+        <div class="service-card">
+
+        </div>
+    </div>
+    <form class="form">
+        <h2 class="form__title">Escribime</h2>
+        <div class="form-content">
+            <label class="form__label" for="Nombre">NOMBRE</label>
+            <input class="form__input" id="Nombre" type="text">
+            <label class="form__label" for="Email">EMAIL</label>
+            <input class="form__input" id="Email" type="text">
+            <label class="form__label" for="message">MENSAJE</label>
+            <textarea class="form__textarea" id="message"></textarea>
+            <div class="button-section">
+                <button class="button-form">Enviar</button>
+            </div>
+        </div>
+    </form>
+    <div class="footer">
+        <img src="imgs/ANVORGUESA.png" alt="logo" class="logo-footer">
+        <div class="redes">
+            <div class="instagram">
+                <p class="nombre-redes">Instagram</p>
+                <img src="imgs/instagram.png" alt="" class="ig">
+            </div>
+            <div class="linkedin">
+                <p class="nombre-redes">Linkedin</p>
+                <img src="imgs/linkedin.png" alt="">
+            </div>
+            <div class="github">
+                <p class="nombre-redes">Github</p>
+                <img src="imgs/git.png" alt="">
+            </div>
+        </div>
+    </div>
+    <template id="service-template">
+        <div class="services__content">
+            <img class="content__img" src="./imgs/img-services.svg" alt="">
+            <h2 class="content__title">Hago cosas</h2>
+            <p class="content__description">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+                adipiscing
+                elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere
+                tristique.</p>
+        </div>
+    </template>
+</body>
+
+</html>
